@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 function Works() {
   const navigate = useNavigate();
@@ -12,7 +12,11 @@ function Works() {
       <br/>
       <button onClick={()=>{
         navigate("/")
-      }}>HOME으로 이동</button>
+      }}
+      >
+        HOME으로 이동
+        </button>
+      <Link to='/contact'>contact 페이지로 이동하기</Link>
     </div>
   )
 }
