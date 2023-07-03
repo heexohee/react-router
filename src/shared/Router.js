@@ -3,6 +3,8 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import Works from "../pages/Works";
+import Work from "../pages/Work";
+
 
 const Router = ()=>{
     return (
@@ -12,6 +14,7 @@ const Router = ()=>{
             <Route path="about" element={<About />}/>
             <Route path="contact" element={<Contact />}/>
             <Route path="works" element={<Works />}/>
+            <Route path="work/:id" element={<Work />}/>
             <Route />
         </Routes>
         </BrowserRouter>
